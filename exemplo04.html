@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+* {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            border: 1px solid #84fa2a;
+            width: 10rem;
+            height: 12rem;
+            padding: 1rem;
+            margin: 2rem auto;
+            box-shadow: 0.5rem 0.5rem 0.3rem 0.01rem #84fa2a;
+            background-color: black;
+            color: #84fa2a;
+            
+        }
+</style>
+
+<body>
+    <div class="container">
+
+        <script>
+            /*
+            * Estrutura sequencial.
+            * Comando de entrada.
+            * Template string e interpolação.
+            */
+           var nome = prompt("Informe o nome do produto:")
+           var descricao = prompt("Informe a descrição do produto:")
+           var preco = prompt("Informe o preço do produto:")
+
+
+            document.write(`<h1 class"titulo">${nome}</h1>` );
+            document.write(`<article class"descricao">${descricao}</article>`);
+            document.write(`<aside class"preco">${preco}</aside`);
+          
+        </script>
+    </div>
+</body>
+
+</html>
