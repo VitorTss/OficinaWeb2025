@@ -19,9 +19,27 @@
             padding: 1rem;
             margin: 2rem auto;
             box-shadow: 0.5rem 0.5rem 0.3rem 0.01rem #84fa2a;
-            background-color: black;
+            background-color: rgb(255, 255, 255);
             color: #84fa2a;
             
+        }
+        .titulo{
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        .descricao{
+            font-size: .8rem;
+        }
+
+        .preco{
+            font-size: 1.6rem;
+            font-weight: bolder;
+            text-align: right;
+        }
+
+        img {
+            width: 10rem;
+            height: 6rem;
         }
 </style>
 
@@ -38,10 +56,10 @@
            var descricao = prompt("Informe a descrição do produto:")
            var preco = prompt("Informe o preço do produto:")
 
-
+            document.write("<img src='image.png' alt='Logo de supermercado.' />");
             document.write(`<h1 class"titulo">${nome}</h1>` );
             document.write(`<article class"descricao">${descricao}</article>`);
-            document.write(`<aside class"preco">${preco}</aside`);
+            document.write(`<aside class= "preco">${preco}</aside>`);
           
         </script>
     </div>
