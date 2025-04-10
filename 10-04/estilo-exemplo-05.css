@@ -5,13 +5,13 @@
 
 
 .painel {
-    border: 1px solid #10d3588d;
+    border: 1px solid beige;
     padding: 1rem;
     border-radius: .5rem;
     width:25rem;
     height: 22rem;
     margin: 1rem auto;
-    box-shadow: .5rem .5rem .3rem .01rem #10d3588d;
+    box-shadow: .5rem .5rem .3rem .01rem beige;
 }
 
 .cabecalho, 
@@ -34,6 +34,8 @@
 
 .entrada {
     width: 7rem;
+    border: none;
+    border-radius: .5rem;
 }
 
 .corpo {
@@ -41,14 +43,19 @@
 }
 
 #resp {
-    width: 23rem;
-    height: 20rem;
+    width: 100%;
+    height: 100%;
     border-radius: .5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
     
 }
 
 button{
-    background-color: blueviolet;
+    background-color: rgb(244, 244, 120);
     color: rgb(255, 255, 255);
     border: none;
     padding: .2rem .5rem;
@@ -57,6 +64,6 @@ button{
 }
 
 button:hover{
-    background-color: rgb(92, 33, 147);
+    background-color: rgba(92, 33, 147,.5);
     color:white
 }
