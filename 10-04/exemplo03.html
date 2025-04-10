@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href = "estilo.css" 
+</head>
+<body>
+        <div id="resp"> </div>
+
+        <script>
+            /*
+            *Comandos de entrada.
+            *Varipavel.
+            *Comandos de saida.
+            *Operador de adição.
+            *Template string.
+            *Interpolção.
+            */ 
+           var num1 = parseInt(prompt("Informe o numero"));
+           var num2 = parseInt(prompt("Informe o numero"));
+
+           var soma = num1 + num2;
+           document.getElementById("resp").innerHTML = `${num1} + ${num2} = ${soma}` ;
+           
+        </script>
+    
+</body>
+</html>
