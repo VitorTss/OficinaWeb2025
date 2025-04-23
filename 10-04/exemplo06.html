@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo</title>
+    <link rel="stylesheet" href="estilo-exemplo-05.css">
+</head>
+<body>
+    <div class="painel">
+        <section class="cabecalho">
+<input type="number" id="numero1" class="entrada">
+<input type="number" id="numero2" class="entrada">
+    
+<button onclick="lerNumeros()">somar</button>
+
+        </section>
+        <main class="corpo">
+            <div id="resp"></div>
+        </main>
+    </div>
+
+    <script>
+        
+        function lerNumeros(){
+           
+            var num1 =parseInt(numero1.value);
+            var num2 =parseInt(numero2.value);
+            
+            document.getElementById("resp").innerHTML += `<p>${num1} + ${num2} = ${somar(num1, num2)}</p><br>`;
+        }
+        
+        function somar(num1, num2){
+            var soma = num1 + num2;
+            
+            return soma;
+        }
+    </script>
+</body>
+</html>
