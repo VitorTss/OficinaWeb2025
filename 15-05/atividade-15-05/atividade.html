@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRUD de Postagens</title>
+  <link rel="stylesheet" href="style.css">
+<body>
+  <main>
+    <h1>Atividade CRUD</h1>
+
+    <section>
+      <input id="id" type="number" placeholder="ID da postagem" />
+      <input id="userId" type="number" placeholder="User ID" />
+      <input id="title" type="text" placeholder="Título" />
+      <input id="body" type="text" placeholder="Conteúdo" />
+      <br>
+      <button onclick="buscarPorId()">Buscar por ID</button>
+      <button onclick="buscarTodos()">Buscar Todos</button>
+      <button onclick="criarPostagem()">Criar</button>
+      <button onclick="atualizarPostagem()">Atualizar</button>
+      <button onclick="modificarPostagem()">Modificar Título</button>
+      <button onclick="removerPostagem()">Remover</button>
+      <button onclick="filtrarPorUserId()">Filtrar por userId</button>
+    </section>
+
+    <div id="resp">
+      <p class="campo">Resposta:</p>
+      <div id="respjson"></div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
