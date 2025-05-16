@@ -1,0 +1,118 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #2c2c2c;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Título principal */
+.titulo {
+  font-size: 2rem;
+  color: #2a7ae2;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Container de cards */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Estilo de cada card */
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  padding: 15px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #1a1a1a;
+}
+
+.card p {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 5px;
+  color: #1e88e5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* Painel de detalhe */
+.painel {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+}
+
+.painel h1 {
+  color: #2c2c2c;
+  margin-bottom: 10px;
+}
+
+.painel p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.painel-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+/* Rodapé */
+footer {
+  background-color: #2a7ae2;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+}
